@@ -1,4 +1,4 @@
-import { UserEntity } from "../../../src/domain/models/user-entity";
+import { UserEntity } from "../../../src/domain/models/user";
 
 describe('User Account',() => {
     it('can register a user',()=>{
