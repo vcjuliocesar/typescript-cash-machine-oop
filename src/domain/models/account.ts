@@ -1,3 +1,4 @@
+import { Debit } from "./debit";
 import { UserEntity } from "./user";
 
 export class Account {
@@ -21,6 +22,8 @@ export class Account {
             throw new Error(`El usuario ${user.name} no está registrado`)
 
         }
+
+        const debit = new Debit()
     }
 
 
