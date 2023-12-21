@@ -1,3 +1,4 @@
+import { Credit } from "./credit";
 import { Debit } from "./debit";
 import { UserEntity } from "./user";
 
@@ -24,6 +25,7 @@ export class Account {
         }
 
         const debit = new Debit()
+        const credit = new Credit()
     }
 
 
