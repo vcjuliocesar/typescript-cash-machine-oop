@@ -21,7 +21,7 @@ export class Credit implements CreditInterface {
             throw new Error(`Excedite el limite de credito de tu cuenta`)
         }
 
-        this.update_balance(this.balance() + amount)
+        this.update_balance(this.balance() - amount)
     }
 
     balance(): number {

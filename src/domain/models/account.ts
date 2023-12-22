@@ -4,7 +4,11 @@ import { UserEntity } from "./user";
 
 export class Account {
 
-    constructor(public user: UserEntity) {
+    constructor(
+        public user: UserEntity,
+        private _debit:Debit = new Debit(),
+        private _credit:Credit = new Credit()) {
+
 
         if (!user.name || user.name.length === 0) {
         
@@ -24,8 +28,16 @@ export class Account {
 
         }
 
-        const debit = new Debit()
-        const credit = new Credit()
+        //this._debit = new Debit()
+        //this._credit = new Credit()
+    }
+
+    get debit() {
+        return this._debit
+    }
+
+    get credit() {
+        return this._credit
     }
 
 
